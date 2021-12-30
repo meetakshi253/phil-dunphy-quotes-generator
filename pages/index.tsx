@@ -28,7 +28,7 @@ export async function getServerSideProps(context: any) {
 
   return {
     props: {
-      quote: data.message.quote
+      quote: data.quote
     },
   }
 };

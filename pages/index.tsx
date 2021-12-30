@@ -5,10 +5,12 @@ import {
   Text,
   useColorModeValue as mode,
   Button,
-  Stack
+  Stack, 
 } from "@chakra-ui/react";
 import { RepeatIcon } from '@chakra-ui/icons'
 import React from "react";
+import Link from 'next/link';
+import Router from 'next/router'
 
 interface Props {
   children: React.ReactElement;
@@ -18,7 +20,6 @@ export async function getServerSideProps(context: any) {
   const res = await fetch(`https://phil-dunphy-quotes-api.herokuapp.com/`)
   const data = await res.json()
 
-  console.log(data.message.quote)
   if (!data) {
     return {
       notFound: true,
@@ -31,6 +32,7 @@ export async function getServerSideProps(context: any) {
     },
   }
 };
+
 
 const Page = (props: { quote: string; notFound?: boolean }) => {
   return (
@@ -66,14 +68,23 @@ const Page = (props: { quote: string; notFound?: boolean }) => {
           </Box>
           <Flex py="5" justifyContent="space-between" direction="row" width={['100%','70%' ]}>
             <Stack direction='row' spacing={4} align='center' >
-              <Button colorScheme='teal' variant='ghost'>
-                API
-              </Button>
-              <Button colorScheme='teal' variant='ghost'>
-                GitHub
-              </Button>
+              <Link href="https://phil-dunphy-quotes-api.herokuapp.com" passHref={true}>
+                <Button colorScheme='teal' variant='ghost' >
+                  API
+                </Button>
+              </Link>
+              <Link href="https://github.com/meetakshi253/phil-dunphy-quotes-generator" passHref={true}>
+                <Button colorScheme='teal' variant='ghost'>
+                  GitHub
+                </Button>
+              </Link>
             </Stack>
-            <Button rightIcon={<RepeatIcon />}colorScheme='teal' variant='solid'>
+            <Button 
+            rightIcon={<RepeatIcon />}
+            colorScheme='teal' 
+            variant='solid'
+            onClick={() => Router.reload()}
+            >
               Refresh
             </Button>
           </Flex>

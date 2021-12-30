@@ -7,8 +7,8 @@ import {
   Link,
   Heading,
   Stack,
-  Button
-} from '@chakra-ui/react'
+  Button,
+} from "@chakra-ui/react";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 
@@ -25,44 +25,33 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <ChakraProvider>
         <Flex minH="100vh" direction="column">
-
           <Box>
-            <Container 
-              maxW="container.lg" 
-              py="7" 
-              centerContent
-            >
-            
-            <Flex 
-              direction="column" 
-              justify="center"
-              overflow="auto"
-              >
-                <Heading as='h1' color='teal' paddingTop="3" size='lg' textAlign="center">Random Phil Dunphy Quote Generator</Heading>
-                <Text py="2"  > A rest api that generates random quotes from the best character on Modern Family (fight me)</Text>
+            <Container maxW="container.lg" py="7" centerContent>
+              <Flex direction="column" justify="center" overflow="auto">
+                <Heading
+                  as="h1"
+                  color="teal"
+                  paddingTop="3"
+                  size="lg"
+                  textAlign="center"
+                >
+                  Random Phil Dunphy Quote Generator
+                </Heading>
+                <Text py="2">
+                  {" "}
+                  A rest api that generates random quotes from the best
+                  character on Modern Family (fight me)
+                </Text>
               </Flex>
             </Container>
-
           </Box>
 
-          < Component {...pageProps} />
+          <Component {...pageProps} />
 
-          <Box 
-            borderTop="1px" 
-            borderColor="gray.300"
-          >
-            <Container 
-              maxW="container.lg" 
-              py="5" 
-              centerContent
-            >
-              <Flex 
-                direction="row" 
-                justify="center">
-                <Text 
-                  fontWeight="medium"
-                  >
-                    Made by</Text>&nbsp;
+          <Box borderTop="1px" borderColor="gray.300">
+            <Container maxW="container.lg" py="5" centerContent>
+              <Flex direction="row" justify="center">
+                <Text fontWeight="medium">Made by</Text>&nbsp;
                 <Link
                   href="https://www.meetakshisetiya.me"
                   color="teal"
@@ -78,7 +67,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         </Flex>
       </ChakraProvider>
     </>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;

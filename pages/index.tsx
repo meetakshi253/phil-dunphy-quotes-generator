@@ -75,7 +75,7 @@ const Page = (props: { quote: string; notFound?: boolean }) => {
                 </Button>
               </Link>
               <Link
-                href="https://github.com/meetakshi253/phil-dunphy-quotes-generator"
+                href="https://github.com/meetakshi253/phil-dunphy-quotes-api"
                 passHref={true}
               >
                 <Button colorScheme="teal" variant="ghost">

@@ -58,6 +58,7 @@ const Page = (props: { quote: string; notFound?: boolean }) => {
             <Text fontSize="lg" p="5">
               {props.notFound ? "An error occured" : props.quote}
             </Text>
+            <Text textAlign="right" p="5" pt="0.5" fontSize="sm">- Phil Dunphy</Text>
           </Box>
           <Flex
             py="5"

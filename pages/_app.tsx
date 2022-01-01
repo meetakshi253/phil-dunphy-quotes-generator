@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>Random Phil Dunphy Quotes</title>
         <meta
           name="description"
-          content="A simple website to show the use of phil-dunphy-quotes-api. Made using Next.js and NextUI by Meetakshi Setiya."
+          content="A simple website to show the use of phil-dunphy-quotes-api. Made using Next.js and Chakra UI by Meetakshi Setiya."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -51,7 +51,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           <Box borderTop="1px" borderColor="gray.300">
             <Container maxW="container.lg" py="5" centerContent>
               <Flex direction="row" justify="center">
-                <Text fontWeight="medium">Made by</Text>&nbsp;
+                <Text>Made by</Text>&nbsp;
                 <Link
                   href="https://www.meetakshisetiya.me"
                   color="teal"

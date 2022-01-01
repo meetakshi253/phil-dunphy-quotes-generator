@@ -9,7 +9,7 @@ To run this locally, do the following:
 
 First, clone the repo:
 ```bash
-git clone https://github.com/meetakshi253/phil-dunphy-quotes-api.git
+git clone https://github.com/meetakshi253/phil-dunphy-quotes-generator.git
 ```
 
 Install the dependencies:

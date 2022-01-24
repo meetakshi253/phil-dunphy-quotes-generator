@@ -19,9 +19,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>Random Phil Dunphy Quotes</title>
         <meta
           name="description"
-          content="A simple website to show the use of phil-dunphy-quotes-api. Made using Next.js and Chakra UI by Meetakshi Setiya."
+          content="Generate a random quote from Phil Dunphy on Modern Family after every refresh. A simple website that shows the use of phil-dunphy-quotes-api. Made using Next.js and Chakra UI."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="author" content="Meetakshi Setiya"></meta>
+        <link rel="icon" href="/favicon.ico" /> 
+        <meta name="google-site-verification" content="H9RMTU6eBfqO0pC7VPRMAnCJQ2KE6WtUSy0EimjWxWY" />
       </Head>
       <ChakraProvider>
         <Flex minH="100vh" direction="column">

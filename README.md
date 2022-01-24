@@ -2,14 +2,14 @@
 
 A simple web app developed using [Next.js](https://nextjs.org/learn) that makes use of the [Phil Dunphy Quotes API](https://github.com/meetakshi253/phil-dunphy-quotes-api). The deployment is available at [https://phil-dunphy-quotes.vercel.app](https://phil-dunphy-quotes.vercel.app).
 
-Data is fectched from the API live at [https://phil-dunphy-quotes-api.herokuapp.com](https://phil-dunphy-quotes-api.herokuapp.com).
+Data is fetched from the API live at [https://phil-dunphy-quotes-api.herokuapp.com](https://phil-dunphy-quotes-api.herokuapp.com).
 ## Getting Started
 
 To run this locally, do the following:
 
 First, clone the repo:
 ```bash
-git clone https://github.com/meetakshi253/phil-dunphy-quotes-api.git
+git clone https://github.com/meetakshi253/phil-dunphy-quotes-generator.git
 ```
 
 Install the dependencies:
